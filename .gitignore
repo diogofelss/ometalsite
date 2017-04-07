@@ -45,3 +45,11 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+/ometalsite.application/obj/Debug
+/ometalsite.domain/obj/Debug
+/ometalsite.infra.data/bin/Debug
+/ometalsite.infra.data/obj/Debug
+/ometalsite.mvc/bin
+/ometalsite.mvc/obj/Debug
+/ometalsite.application/bin/Debug
+/ometalsite.domain/bin/Debug

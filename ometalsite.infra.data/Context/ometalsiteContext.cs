@@ -1,8 +1,8 @@
-﻿using ometalsite.domain.Entities;
+﻿using System;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
-using System;
+using ometalsite.domain.Entities;
 using ometalsite.infra.data.EntityConfiguration;
 
 namespace ometalsite.infra.data.Context
@@ -14,8 +14,14 @@ namespace ometalsite.infra.data.Context
 
         }
 
+        #region DBSet
+
         public DbSet<Genero> CAD_GENERO { get; set; }
         public DbSet<Banda> CAD_BANDA { get; set; }
+
+        #endregion
+
+        #region Métodos sobescritos
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -47,5 +53,7 @@ namespace ometalsite.infra.data.Context
 
             return base.SaveChanges();
         }
+
+        #endregion
     }
 }

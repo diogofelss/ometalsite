@@ -20,6 +20,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -33,6 +34,7 @@
     <Compile Include="Entities\Banda.cs" />
     <Compile Include="Entities\Genero.cs" />
     <Compile Include="Interfaces\Common\IRepositoryBase.cs" />
+    <Compile Include="Interfaces\IBandaRepository.cs" />
     <Compile Include="Interfaces\IGeneroRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
